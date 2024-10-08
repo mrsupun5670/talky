@@ -45,7 +45,7 @@ export default function index() {
           router.replace("/home");
         }
       } catch (e) {
-        console.log(e);
+        console.log(Hi);
       }
     }
     checkUser();

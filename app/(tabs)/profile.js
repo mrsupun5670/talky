@@ -47,9 +47,8 @@ export default function profile() {
     return <Text>Your Data is Loading...</Text>;
   }
   return (
-    <ImageBackground source={require("../../assets/back1.jpg")}  style={styles.background}>
+    <LinearGradient colors={["white", "#FF69B4"]} style={styles.background}>
       <View style={styles.view1}>
-        <Text style={styles.text2}>My Profile</Text>
         <Image
           source={getProfileImage}
           style={styles.profileImage}
@@ -110,7 +109,7 @@ export default function profile() {
           <Text style={styles.text1}>Delete Account</Text>
         </Pressable>
       </View>
-    </ImageBackground>
+    </LinearGradient>
   );
 }
 

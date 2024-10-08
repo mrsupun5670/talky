@@ -105,14 +105,7 @@ export default function chat() {
                   let json = await response.json();
                   if (json.success) {
                     setMessage("");
-                    setTimeout(() => {
-                      if (flashListRef.current && getChatArray.length > 0) {
-                        flashListRef.current.scrollToIndex({
-                          index: getChatArray.length - 1,
-                          animated: true,
-                        });
-                      }
-                    }, 100);
+                   
                   }
                 }
               }
